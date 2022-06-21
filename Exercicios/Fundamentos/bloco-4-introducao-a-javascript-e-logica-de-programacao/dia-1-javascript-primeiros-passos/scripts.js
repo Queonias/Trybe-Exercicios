@@ -1,17 +1,13 @@
-//Faça um programa que retorne o maior de três números. Defina no começo do programa três constantes com os valores que serão comparados.
+// Faça um programa que, dado um valor definido numa constante, retorne "positive" se esse valor for positivo, "negative" se for negativo e "zero" caso contrário.
 
-const a = 1;
-const b = 2;
-const c = 5;
+const num = 3;
 
-console.log(`Os números escolhidos foram:${a}, ${b}, ${c} `);
-
-if (a > b && a > c) {
-    console.log(`${a} é o maior número entre eles`);
-} else if (b > a && b > c) {
-    console.log(`${b} é o maior número entre eles`);
-} else if (c > a && c > b) {
-    console.log(`${c} é o maior número entre eles`);
+if (num > 0) {
+  console.log(`positivo`);
+} else if (num < 0) {
+  console.log(`negativo`);
+} else if ((num == 0)) {
+  console.log(`${num} é um número neutro`);
 } else {
-    console.log("Há números com valores iguais.");
+    console.log("Entrada inválida.");
 }
