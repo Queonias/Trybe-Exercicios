@@ -4,11 +4,68 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
     <title>Trybe Trip</title>
 </head>
 <body>
     <main>
+        <section>
+            <h1> Trybe Trip</h1>
+            <form action="" method="get">
+                <div class="formularioCampo">    
+                    <div>
+                        <label for="name" id="name">Nome:</label>
+                        <input type="text" name="name" id="name" autocomplete="off" >
+                    </div>
+                    <div>
+                        <label for="email" id="email">E-mail:</label>
+                        <input type="email" name="email" id="email" autocomplete="off">
+                    </div>
+                    <div class="opcoes">
+                        <input type="radio" name="opcoes" id="Opção1" value="Opção1">
+                        <label for="Opção1">Opção 1</label>
 
+                        <input type="radio" name="opcoes" id="Opção2" value="Opção2">
+                        <label for="Opção2">Opção 2</label>
+
+                        <input type="radio" name="opcoes" id="Opção3" value="Opção3">
+                        <label for="Opção3">Opção 3</label>
+
+                        <input type="radio" name="opcoes" id="Opção4" value="Opção4">
+                        <label for="Opção4">Opção 4</label>
+                    </div>
+
+                    <div class="textArea">
+                        <label for="email">Espaço para digitar a resposta:</label>
+                        <textarea name="resposta" id="resposta"></textarea>
+                    </div>
+
+                    <div>
+                        <label for="date">Data:</label>
+                        <input type="date" name="date" id="date">
+                    </div>
+                    <div class="concordo">
+                        <div>
+                            <label for="concordo1">Concordo 1
+                                <input type="checkbox" name="concordo1" id="concordo1">
+                            </label>        
+                        </div>
+                        <div>
+                            <label for="concordo2">Concordo 2
+                                <input type="checkbox" name="concordo2" id="concordo2">
+                            </label>
+                        </div>
+                    </div>
+
+                </div>
+                
+                <div>
+                    <button type="submit" class="button">Enviar</button>
+                    <button type="submit" class="button">Apagar</button>
+                </div>
+            
+            </form>
+        </section>
     </main>
 </body>
 </html>
