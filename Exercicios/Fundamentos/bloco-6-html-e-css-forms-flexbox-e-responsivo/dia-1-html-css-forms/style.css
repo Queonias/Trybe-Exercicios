@@ -42,6 +42,7 @@ section div {
 
 .button:hover{
     background-color: rgb(166, 177, 182);
+    cursor: pointer;
 }
 
 .textArea textarea {
@@ -70,4 +71,8 @@ textarea:focus,  input:focus {
 
 #email, #name {
     height: 20px;
+}
+
+.hover:hover{
+    cursor: pointer;
 }
