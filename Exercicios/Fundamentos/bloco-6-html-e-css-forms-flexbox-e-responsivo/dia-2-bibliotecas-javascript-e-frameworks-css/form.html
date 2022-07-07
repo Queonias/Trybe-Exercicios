@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Trybe Trip</title>
+</head>
+<body>
+    <main>
+        <section>
+            <h1> Trybe Trip</h1>
+            <form action="" method="get">
+                <div class="formularioCampo">    
+                    <div>
+                        <label for="name" id="name1">Nome:</label>
+                        <input type="text" name="name" id="name" autocomplete="off" >
+                    </div>
+                    <div>
+                        <label for="email" id="email1">E-mail:</label>
+                        <input type="email" name="email" id="email" autocomplete="off">
+                    </div>
+                    <div class="opcoes">
+                        <input type="radio" name="opcoes" id="Opção1" value="Opção1" class="hover">
+                        <label for="Opção1" class="hover selecao">Opção 1</label>
+
+                        <input type="radio" name="opcoes" id="Opção2" value="Opção2" class="hover">
+                        <label for="Opção2" class="hover selecao">Opção 2</label>
+
+                        <input type="radio" name="opcoes" id="Opção3" value="Opção3" class="hover">
+                        <label for="Opção3" class="hover selecao">Opção 3</label>
+
+                        <input type="radio" name="opcoes" id="Opção4" value="Opção4" class="hover">
+                        <label for="Opção4" class="hover selecao">Opção 4</label>
+                    </div>
+
+                    <div class="textArea">
+                        <label for="email">Espaço para digitar a resposta:</label>
+                        <textarea name="resposta" id="resposta"></textarea>
+                    </div>
+
+                    <div>
+                        <label for="date">Data:</label>
+                        <input type="date" name="date" id="date" class="hover">
+                    </div>
+                    <div class="concordo">
+                        <div>
+                            <label for="concordo1" class="concordo hover">Concordo 1
+                                <input type="checkbox" name="concordo1" id="concordo1">
+                            </label>        
+                        </div>
+                        <div>
+                            <label for="concordo2" class="concordo hover">Concordo 2
+                                <input type="checkbox" name="concordo2" id="concordo2">
+                            </label>
+                        </div>
+                    </div>
+
+                </div>
+                
+                <div>
+                    <button type="submit" class="button" id="btn-enviar">Enviar</button>
+                    <button type="submit" class="button" id="btn-apagar">Apagar</button>
+                </div>
+            
+            </form>
+        </section>
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>
