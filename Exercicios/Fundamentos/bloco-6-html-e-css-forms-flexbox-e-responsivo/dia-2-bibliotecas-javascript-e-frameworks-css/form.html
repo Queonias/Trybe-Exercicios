@@ -1,72 +1,88 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
     <title>Trybe Trip</title>
-</head>
-<body>
+  </head>
+  <body>
     <main>
-        <section>
-            <h1> Trybe Trip</h1>
-            <form action="" method="get">
-                <div class="formularioCampo">    
-                    <div>
-                        <label for="name" id="name1">Nome:</label>
-                        <input type="text" name="name" id="name" autocomplete="off" >
-                    </div>
-                    <div>
-                        <label for="email" id="email1">E-mail:</label>
-                        <input type="email" name="email" id="email" autocomplete="off">
-                    </div>
-                    <div class="opcoes">
-                        <input type="radio" name="opcoes" id="Opção1" value="Opção1" class="hover">
-                        <label for="Opção1" class="hover selecao">Opção 1</label>
-
-                        <input type="radio" name="opcoes" id="Opção2" value="Opção2" class="hover">
-                        <label for="Opção2" class="hover selecao">Opção 2</label>
-
-                        <input type="radio" name="opcoes" id="Opção3" value="Opção3" class="hover">
-                        <label for="Opção3" class="hover selecao">Opção 3</label>
-
-                        <input type="radio" name="opcoes" id="Opção4" value="Opção4" class="hover">
-                        <label for="Opção4" class="hover selecao">Opção 4</label>
-                    </div>
-
-                    <div class="textArea">
-                        <label for="email">Espaço para digitar a resposta:</label>
-                        <textarea name="resposta" id="resposta"></textarea>
-                    </div>
-
-                    <div>
-                        <label for="date">Data:</label>
-                        <input type="date" name="date" id="date" class="hover">
-                    </div>
-                    <div class="concordo">
-                        <div>
-                            <label for="concordo1" class="concordo hover">Concordo 1
-                                <input type="checkbox" name="concordo1" id="concordo1">
-                            </label>        
-                        </div>
-                        <div>
-                            <label for="concordo2" class="concordo hover">Concordo 2
-                                <input type="checkbox" name="concordo2" id="concordo2">
-                            </label>
-                        </div>
-                    </div>
-
-                </div>
-                
-                <div>
-                    <button type="submit" class="button" id="btn-enviar">Enviar</button>
-                    <button type="submit" class="button" id="btn-apagar">Apagar</button>
-                </div>
+      <section class="container-sm section">
+        <h1>Trybe Trip</h1>
+        <form action="" method="get">
+          
             
-            </form>
-        </section>
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-default">Nome</span>
+                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" id="nome">
+            </div>
+
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-default">E-mail</span>
+                <input type="email" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+            </div>
+
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                <label class="form-check-label" for="inlineRadio1">Opção 1</label>
+            </div>
+              
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                <label class="form-check-label" for="inlineRadio2">Opção 2</label>
+            </div>
+            
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                <label class="form-check-label" for="inlineRadio3">Opção 3</label>
+            </div>
+            
+            
+            <div class="form-floating textareaB">
+                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                <label for="floatingTextarea2">Comentários</label>
+            </div>
+        
+
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-default">Data</span>
+                <input type="date" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" id="date">
+            </div>
+        
+            <div class="form-check">
+                <input class="form-check-input concordo1" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                    Concordo 1
+                </label>
+            </div>
+            
+            <div class="form-check">
+                <input class="form-check-input concordo2" type="checkbox" value="" id="flexCheckChecked" >
+                <label class="form-check-label " for="flexCheckChecked">
+                    Concordo 2
+                </label>
+            </div>
+
+            <div class="buttonss">
+                <button type="submit" class="btn btn-primary" id="btn-enviar">Enviar</button>
+                <button type="reset" class="btn btn-secondary" id="btn-apagar">Apagar</button>
+            </div>
+        </form>
+      </section>
     </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
     <script src="./script.js"></script>
-</body>
+  </body>
 </html>
