@@ -20,3 +20,5 @@ const getUser = (callback) => {
 
 getUser(userFullName);
 getUser(userNationality);
+
+
