@@ -1,7 +1,3 @@
-const { rejects } = require("assert");
-const { Console } = require("console");
-const { resolve } = require("path");
-
 function rand(min, max) {
     min *= 1000;
     max *= 1000;
