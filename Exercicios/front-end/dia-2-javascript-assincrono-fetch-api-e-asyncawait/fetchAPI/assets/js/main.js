@@ -31,7 +31,6 @@ document.addEventListener('click', e => {
     if(response.status !== 200) throw new Error('');
     const html = await response.text();
     carregaResultado(html);
-    console.log(html)
   } catch (error) {
     console.log(error);
   }
