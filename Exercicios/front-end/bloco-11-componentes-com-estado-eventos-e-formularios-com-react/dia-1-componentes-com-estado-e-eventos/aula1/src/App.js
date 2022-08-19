@@ -36,13 +36,21 @@ class App extends Component {
   //   console.log('Clicou no botão!')
   // }
 
-  handleClick = () => {
-    console.log(this); // essa é uma outra forma de se declarar um método sem usar o constructor 
+  // handleClick = () => {
+  //   console.log(this); // essa é uma outra forma de se declarar um método sem usar o constructor 
+  // }
+
+  state = {
+    conter: 0,
+  }
+
+  inc = () => {
+    this.setState({conter: this.state.conter + 1})
   }
 
   render() {
     return (
-      <button type="button" onClick={this.handleClick}>Meu botão</button>
+      <button type="button" onClick={this.inc}>{this.state.conter}</button>
     );
   }
 }
